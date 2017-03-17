@@ -1,0 +1,35 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialogo de Confirmación</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Ejemplo de dialogo de Confirmación</h1>
+        <button onclick="myFunc()"> Click </button>
+        <p id="display"></p>
+        <script>
+            function myFunc()
+            {
+                var userResponse;
+                var message;
+                userResponse=confirm("Deseas Continuar Aprendiendo JavaScript?");
+                
+                if(userResponse==true)
+                    {
+                        message="Feliz Aprendizaje";
+                    }
+                else
+                    {
+                        message="Escoge otro lenguaje de Programación";
+                    }
+                    document.getElementById("display").innerHTML=message;
+            }
+        </script>
+
+    </body>
+</html>

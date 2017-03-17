@@ -1,0 +1,26 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialogo Prompt</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Ejemplo de Prompt Dialogo</h1>
+        <button onclick="myFunc()"> Click</button>
+	<p id="display"></p>
+        <script>
+            function myFunc()
+            {
+		var StrUser
+		StrUser=prompt("Ingrese su Usuario","Batman");
+
+		document.getElementById("display").innerHTML="Hello "+StrUser+ "!";
+                
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operadores Aritméticos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Operadores Aritméticos</h1>
+        <p id="add"></p>
+        <p id="subs"></p>
+        <p id="mul"></p>
+        <p id="div"></p>
+        <p id="mod"></p>
+        
+        <script>
+            var num1=10;
+            var num2=5;
+            var resultado;
+            
+            //Suma 
+            var add= num1 + num2;
+            document.getElementById("add").innerHTML = "La Suma es: " +add;
+            
+            //resta
+            var subs=num1-num2;
+            document.getElementById("subs").innerHTML = "La resta es: " +subs;
+            
+            //multiplicación
+            var mul=num1*num2;
+            document.getElementById("mul").innerHTML = "La multiplicación es: " +mul;
+            
+            //división
+            var div=num1/num2;
+            document.getElementById("div").innerHTML = "La división es: " +div;
+            
+            var mod=num1%num2;
+            document.getElementById("mod").innerHTML = "El mod es: " +mod;
+            
+        </script>
+    </body>
+</html>
